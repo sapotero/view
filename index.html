@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+
+    <div class="mui-container">
+      <div class="mui-row">
+        <div class="mui-col-md-4 mui--text-center" id="sidebars"></div>
+        <div class="mui-col-md-8 mui--text-center" id="main"></div>
+      </div>
+    </div>
+
+
+    <script id='sidebarTemplate' type='text/ractive'>
+      {{#each names}}
+        +
+      {{/each}}
+    </script>
+    
+    <script id='mainTemplate' type='text/ractive'>
+      <p>Hello, {{name}}!</p>
+    </script>
+
+
+    <script src="js/ractive.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
